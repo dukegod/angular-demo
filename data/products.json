@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "我的活动",
+        "info": "我的活动我的活动我的活动我的活动我的活动我的活动我的活动我的活动",
+        "age": 1,
+        "image": "images/pictuer_brandactivity@2x.png"
+    },
+    {
+        "id": 2,
+        "name": "我的学习",
+        "info": "我的学习我的学习我的学习我的学习我的学习我的学习我的学习我的学习",
+        "age": 2,
+        "image": "images/pictuer_learn@2x.png"
+    },
+    {
+        "id": 3,
+        "name": "我的新闻页面",
+        "info": "我的新闻页面我的新闻页面我的新闻页面我的新闻页面我的新闻页面",
+        "age": 3,
+        "image": "images/pictuer_news@2x.png"
+    },
+    {
+        "id": 4,
+        "name": "学术活动页面",
+        "info": "学术活动页面学术活动页面学术活动页面学术活动页面学术活动页面",
+        "age": 4,
+        "image": "images/picture_academic@2x.png"
+    },
+    {
+        "id": 5,
+        "name": "我的推荐页面",
+        "info": "我的推荐页面我的推荐页面我的推荐页面我的推荐页面我的推荐页面",
+        "age": 4,
+        "image": "images/picture_recommend@2x.png"
+    },
+    {
+        "id": 6,
+        "name": "brand",
+        "info": "brand brand brand brand",
+        "age": 1,
+        "image": "images/picture_brand@2x.png"
+    }
+]

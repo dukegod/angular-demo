@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" ng-app="todeApp">
+<head>
+  <meta charset="utf-8">
+  <title>Angular</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/todos.js"></script>
+</head>
+<body ng-controller="Todes">
+	<ul class="list-group" >
+		<li class="list-group-item" ng-repeat="x in todesarr">{{x}}</li>	
+	</ul>
+</body>
+</html>

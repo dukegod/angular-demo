@@ -1,0 +1,39 @@
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">brand</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">list</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+    <div class="col-md-3">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="search" ng-model="query" />
+        </div>
+        <div class="form-group">
+            <select class="form-control" ng-model="order">
+                <option value="name">name</option>
+                <option value="age">age</option>
+            </select>
+        </div>
+    </div>
+    <ul class="col-md-9 list-group">
+        <li class="list-group-item" ng-repeat="product in products | filter:query | orderBy:order">
+            <a href="#/products/{{product.id}}">
+                <h4 class="list-group-item-heading">
+                    <img ng-src="{{product.image}}" />
+                    {{product.name}} - {{product.age}}年
+                </h4>
+            </a>
+            <p class="list-group-item-text">
+                {{product.info}}
+            </p>
+        </li>
+    </ul>
+</div>
