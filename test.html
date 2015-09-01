@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="testApp">
+<head>
+  <meta charset="utf-8">
+  <title>Angular</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/hello.js"></script>
+</head>
+<body>
+	<div ng-controller="hello">
+			<input ng-model="name" type="text" palceholder="your name ">
+			<h2>hello {{name}}</h2>
+	</div>
+
+	<div ng-controller="time">
+		<h3>time :{{clock}}</h3>
+	</div>
+
+	<div ng-controller= "click">
+		<h3>data add min </h3>
+		<button ng-click="add(1)">add</button>
+		<button ng-click="min(2)">min</button>
+		<p>current count: {{num}}</p>
+	</div>
+</body>
+</html>
