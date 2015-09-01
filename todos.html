@@ -10,8 +10,15 @@
   <script src="js/todos.js"></script>
 </head>
 <body ng-controller="Todes">
-	<ul class="list-group" >
-		<li class="list-group-item" ng-repeat="x in todesarr">{{x}}</li>	
+	<div class="list-group m-t">
+		<input type="text" class="form-control" ng-model="query" placeholder="search"/>
+	</div>
+	<div class="list-group m-t">
+		<input type="text" class="form-control" ng-model="add" placeholder="add info "/>
+	</div>
+	
+	<ul class="list-group m-t-md" >
+		<li class="list-group-item" ng-repeat="x in todesarr | filter:query ">{{x}}</li>	
 	</ul>
 </body>
 </html>
