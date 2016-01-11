@@ -12,3 +12,7 @@ angular 1.4.5
 运行node server.js
 
 Server running at http: //127.0.0.1:8888/
+
+### express 
+
+node express-serve.js
