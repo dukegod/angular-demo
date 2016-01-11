@@ -16,50 +16,49 @@ http.createServer(function(req, res) {
         pathname += "index.html";
     }
 
-    fs.exists(pathname,
-    function(exists) {
+    fs.exists(pathname,function(exists) {
+        console.log('pathname2' + pathname);
         if (exists) {
             switch (path.extname(pathname)) {
             case".html":
-                res.writeHead(200, {"Content - Type": "text / html"
+                res.writeHead(200, {"Content-Type": "text / html"
                 });
                 break;
             case".js":
-                res.writeHead(200, {"Content - Type": "text / javascript"
+                res.writeHead(200, {"Content-Type": "text / javascript"
                 });
                 break;
             case".css":
-                res.writeHead(200, {"Content - Type": "text / css"
+                res.writeHead(200, {"Content-Type": "text / css"
                 });
                 break;
             case".gif":
-                res.writeHead(200, {"Content - Type": "image / gif"
+                res.writeHead(200, {"Content-Type": "image / gif"
                 });
                 break;
             case".jpg":
-                res.writeHead(200, {"Content - Type": "image / jpeg"
+                res.writeHead(200, {"Content-Type": "image / jpeg"
                 });
                 break;
             case".png":
-                res.writeHead(200, {"Content - Type": "image / png"
+                res.writeHead(200, {"Content-Type": "image / png"
                 });
                 break;
             default:
-                res.writeHead(200, {"Content - Type": "application / octet - stream"
+                res.writeHead(200, {"Content-Type": "application / octet - stream"
                 });
             }
 
-            fs.readFile(pathname,
-            function(err, data) {
+            fs.readFile(pathname,function(err, data) {
+                // if (err) console.log(err);
                 res.end(data);
             });
         } else {
-            res.writeHead(404, {"Content - Type": "text / html"
-            });
+            res.writeHead(404, {"Content-Type": "text / paint"});
             res.end("404 Not Found");
         }
     });
 
-}).listen(8888, "127.0.0.1");
+}).listen(3000, "127.0.0.1");
 
-console.log("Server running at http: //127.0.0.1:8888/");
+console.log("Server running 3000");
